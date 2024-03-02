@@ -31,5 +31,11 @@ eval $(thefuck --alias)
 alias zshconf="nvim ~/.zshrc"
 alias zshso="source ~/.zshrc"
 alias cpwd='pwd | tr -d "\n" | xargs echo -n | xclip -selection clipboard'
+alias cmake_ecc='cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..'
+alias nvimconf='nvim ~/.config/nvim/lua/core/init.lua'
+alias nvimbinds='nvim ~/.config/nvim/lua/core/keymaps.lua'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# Zoxide, also creates alias
+eval "$(zoxide init --cmd cd zsh)"
